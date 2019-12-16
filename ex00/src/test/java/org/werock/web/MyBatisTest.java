@@ -27,6 +27,7 @@ public class MyBatisTest {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
+			
 		}
 	}
 }
