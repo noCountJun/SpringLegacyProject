@@ -22,15 +22,28 @@ public class MemberDAOTest {
 		System.out.println(dao.getTime());
 	}
 	
+//	@Test
+//	public void testInsertMember() throws Exception {
+//		MemberVO vo = new MemberVO();
+//		vo.setUserid("Pack");
+//		vo.setUsername("박지성");
+//		vo.setUserpw("1111");
+//		vo.setEmail("jisung@aaa.com");
+//		
+//		dao.insertMember(vo);
+//	}
+	
 	@Test
-	public void testInsertMember() throws Exception {
-		MemberVO vo = new MemberVO();
-		vo.setUserid("Pack");
-		vo.setUsername("박지성");
-		vo.setUserpw("1111");
-		vo.setEmail("jisung@aaa.com");
-		
-		dao.insertMember(vo);
+	public void testSelectMember() throws Exception {
+	
+		System.out.println(dao.readMember("Pack"));
+	}
+	
+	
+	@Test
+	public void readWithPW() throws Exception {
+	
+		System.out.println(dao.readWithPW("Pack","1111"));
 	}
 	
 }
